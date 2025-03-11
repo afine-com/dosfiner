@@ -7,14 +7,13 @@
 - Concurrency: Launch multiple goroutines (`-t`) for GET or POST floods
 - Custom headers (`-H`) or data (`-d`)
 - Proxy support (`-proxy`)  
-- Raw request mode (`-r file.txt`), preserving `\r\n` for multipart requests
+- Raw request mode (`-r file.txt`)
 - Force-SSL option (`--force-ssl`), switching `http://` → `https://`
-- Basic status code handling, with short logs about throttling or errors
 
 ## Installation
 
 ```bash
-git clone https://github.com/YourUser/dosfiner.git
+git clone https://github.com/afine-com/dosfiner.git
 cd dosfiner
 go build dosfiner.go
 # or simply:
