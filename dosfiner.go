@@ -62,13 +62,16 @@ func main() {
     flag.StringVar(&rawRequestFile, "r", "", "Read raw HTTP request from file (like sqlmap -r)")
     flag.BoolVar(&forceSSL, "force-ssl", false, "Force https")
 
-    flag.Usage = func() {
-        fmt.Println("Usage: dosfiner [options]")
-        fmt.Println("  -g, -p, -u, -d, -H, -t, -proxy, etc.")
-        fmt.Println("  -r <file> to send raw request from file")
-        fmt.Println("  --force-ssl to switch http -> https")
-        fmt.Println("Example: dosfiner -r request.txt -t 10 --force-ssl -proxy http://127.0.0.1:8080")
-    }
+		flag.Usage = func() {
+		    fmt.Println("=====================================================")
+		    fmt.Println(" DoS Finder - by Paweł Zdunek (AFINE)")
+		    fmt.Println("=====================================================")
+		    fmt.Println("Usage: dosfiner [options]")
+		    fmt.Println("  -g, -p, -u, -d, -H, -t, -proxy, etc.")
+		    fmt.Println("  -r <file> to send raw request from file")
+		    fmt.Println("  --force-ssl to switch http -> https")
+		    fmt.Println("Example: dosfiner -r request.txt -t 10 --force-ssl -proxy http://127.0.0.1:8080")
+		}
 
     rand.Seed(time.Now().UnixNano())
     flag.Parse()
