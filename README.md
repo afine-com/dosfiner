@@ -46,6 +46,3 @@ go run dosfiner.go [options]
 ## ⚠️ Important Notice
 **Use responsibly.**  
 Dosfiner generates intense traffic that may lead to real Denial-of-Service scenarios. Always obtain explicit permission and perform testing in controlled environments only.
-
-## 📜 License
-[MIT License](LICENSE)
