@@ -63,9 +63,6 @@ func main() {
     flag.BoolVar(&forceSSL, "force-ssl", false, "Force https")
 
 		flag.Usage = func() {
-		    fmt.Println("=====================================================")
-		    fmt.Println(" DoS Finder - by Paweł Zdunek (AFINE)")
-		    fmt.Println("=====================================================")
 		    fmt.Println("Usage: dosfiner [options]")
 		    fmt.Println("  -g, -p, -u, -d, -H, -t, -proxy, etc.")
 		    fmt.Println("  -r <file> to send raw request from file")
